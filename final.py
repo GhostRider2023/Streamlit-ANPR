@@ -375,11 +375,11 @@ with st.container() as body:
 
                 if len(texts) == 1 and len(license_plate_crop):
                     _, col3, _ = st.columns([0.4, 1, 0.2])
-                    col3.header("Detection Results ✅:")
+                    col3.header("Detection Results :")
                     _, col4, _ = st.columns([0.1, 1, 0.1])
                     col4.image(prediction)
                     _, col9, _ = st.columns([0.4, 1, 0.2])
-                    col9.header("License Cropped ✅:")
+                    col9.header("License Cropped :")
                     _, col10, _ = st.columns([0.3, 1, 0.1])
                     col10.image(license_plate_crop[0], width=350)
                     _, col11, _ = st.columns([0.45, 1, 0.55])
@@ -388,11 +388,11 @@ with st.container() as body:
                     st.dataframe(df)
                 elif len(texts) > 1 and len(license_plate_crop) > 1:
                     _, col3, _ = st.columns([0.4, 1, 0.2])
-                    col3.header("Detection Results ✅:")
+                    col3.header("Detection Results :")
                     _, col4, _ = st.columns([0.1, 1, 0.1])
                     col4.image(prediction)
                     _, col9, _ = st.columns([0.4, 1, 0.2])
-                    col9.header("License Cropped ✅:")
+                    col9.header("License Cropped :")
                     _, col10, _ = st.columns([0.3, 1, 0.1])
 
                     for i in range(0, len(license_plate_crop)):
