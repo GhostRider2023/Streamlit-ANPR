@@ -405,6 +405,6 @@ with st.container() as body:
             else:
                 prediction = results[0]
                 _, col3, _ = st.columns([0.4, 1, 0.2])
-                col3.header("Detection Results ✅:")
+                col3.header("Detection Results :")
                 _, col4, _ = st.columns([0.3, 1, 0.1])
                 col4.image(prediction)
